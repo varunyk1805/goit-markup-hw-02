@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Студия</title>
+    <title>Портфолио</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <!-- шапка -->
-    <header>
-        <a href="./index.html">WebStudio</a>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Студия</a></li>
-                <li><a href="./portfolio.html">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
+    <header class="header">
+        <a class="link logo" href="./index.html"><span>Web</span>Studio</a>
+        <nav class="nav">
+            <ul class="list">
+                <li><a class="link" href="./index.html">Студия</a></li>
+                <li><a class="link link-current" href="./portfolio.html">Портфолио</a></li>
+                <li><a class="link" href="">Контакты</a></li>
             </ul>
         </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="list">
+            <li><a class="link contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="link contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </header>
     <main>
@@ -36,7 +39,7 @@
         <!-- Преимущества -->
         <section>
             <h2>Преимущества</h2>
-            <ul>
+            <ul class="list">
                 <li>
                     <h3>Внимание к деталям</h3>
                     <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -58,7 +61,7 @@
         <!-- Направления работы -->
         <section>
             <h2>Чем мы занимаемся</h2>
-            <ul>
+            <ul class="list">
                 <li>
                     <img src="./images/index/img1.jpg" alt="компьютер" width="294">
                 </li>
@@ -73,7 +76,7 @@
         <!-- Сотрудники -->
         <section>
             <h2>Наша команда</h2>
-            <ul>
+            <ul class="list">
                 <li>
                     <img src="./images/index/img4.jpg" alt="Игорь Демьяненко" width="260">
                     <h3>Игорь Демьяненко</h3>
@@ -98,15 +101,16 @@
         </section>
     </main>
     <!-- Подвал -->
-    <footer>
-        <a href="">WebStudio</a>
+    <footer class="footer">
+        <a class="link logo" href="./index.html"><span>Web</span>Studio</a>
         <address>
-            <ul>
-                <li>г. Киев, пр-т Леси Украинки, 26</li>
-                <li><a href="mailto:info@example.com">info@example.com</a></li>
-                <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+            <ul class="list">
+                <li class="address">г. Киев, пр-т Леси Украинки, 26</li>
+                <li><a class="link contacts" href="mailto:info@example.com">info@example.com</a></li>
+                <li><a class="link contacts" href="tel:+380991111111">+38 099 111 11 11</a></li>
             </ul>
         </address>
     </footer>
 </body>
+    
 </html>
