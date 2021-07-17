@@ -48,8 +48,8 @@ body {
 
 .nav .link:hover,
 .nav .link:focus,
-.contacts .link:hover,
-.contacts .link:focus {
+.header .contacts:hover,
+.header .contacts:focus {
   color: #2196f3;
 }
 
