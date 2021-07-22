@@ -1,15 +1,13 @@
-/* /* цвет основного текста #000000 */
-/* вторичный цвет текста  rgba(0, 0, 0, 0.8);
- */
-/* белый #FFFFFF  */
-/* акцент #18A0FB */
-/* вторичный цвет фона #F5F5F5; */
-
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --accent-hero-btn-color: #188ce8;
   --primary-white-color: #ffffff;
+  --header-logo-color: #000000;
+  --footer-background-color: #2f303a;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --second-background-color: #f5f4fa;
 }
 
 body {
@@ -36,14 +34,14 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo span {
+.logo .web {
   color: var(--accent-color);
 }
 
 /* шапка */
 
 .header .logo {
-  color: #000000;
+  color: var(--header-logo-color);
 }
 
 .nav .link {
@@ -77,7 +75,7 @@ body {
 
 /* Подвал */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer-background-color);
 }
 
 .footer .logo {
@@ -95,14 +93,15 @@ body {
 }
 
 .footer .contacts {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contacts-color);
 }
 
 /* Кнопки портфолио */
 .btn {
-  background-color: #f5f4fa;
+  background-color: var(--second-background-color);
   color: var(--title-text-color);
 
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -110,6 +109,11 @@ body {
   letter-spacing: 0.03em;
 
   cursor: pointer;
+}
+
+.btn.default {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 
 .btn:hover,
@@ -120,7 +124,7 @@ body {
 
 /* Герой */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--footer-background-color);
 }
 
 .hero .title {
@@ -131,12 +135,15 @@ body {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
+
+  text-transform: uppercase;
 }
 
 .hero .btn {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -147,7 +154,7 @@ body {
 
 .hero .btn:hover,
 .hero .btn:focus {
-  background-color: #188ce8;
+  background-color: var(--accent-hero-btn-color);
 }
 
 /* Примеры работ */
@@ -178,6 +185,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+
+  text-transform: uppercase;
 }
 
 .feature .text {
@@ -189,7 +198,7 @@ body {
 }
 
 /* Направления работы */
-.services .title {
+.services {
   color: var(--title-text-color);
 
   font-size: 36px;
@@ -200,7 +209,7 @@ body {
 
 /* Сотрудники */
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--second-background-color);
 }
 
 .team .title {
